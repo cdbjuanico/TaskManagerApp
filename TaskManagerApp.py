@@ -284,7 +284,7 @@ class Page5(tk.Frame):
                 tk.Frame.__init__(self, parent)
                 label = ttk.Label(self, text ="Task List", font = LARGEFONT)
                 tasksList = tkinter.Text(self, width=43)
-                indexlabel = tkinter.Label(self, text = "Input Index of Task to changes Status")
+                indexlabel = tkinter.Label(self, text = "Input Index of Task to change Status")
                 taskIndex = Entry(self)
                 BackButton = tkinter.Button(self, text = "Back", command = lambda : [controller.show_frame(StartPage)])
                 RefreshButton = tkinter.Button(self, text = "Refresh", command = lambda : [Page5.updateList(tasksList,taskIndex)])
